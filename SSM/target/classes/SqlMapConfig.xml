@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration
+PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+	<!-- TypeAliase 别名 -->
+	<typeAliases>
+		<!-- 批量别名设置，默认为类名，大小写不敏感 -->
+		<package name="com.wuqi.entity" />
+	</typeAliases>
+
+	<!-- 将映射文件配置到全局配置文件中 -->
+	<mappers>
+		<!-- 批量配置  该种配置要求接口和mapper.xml要在同一包下-->
+		<package name="com.wuqi.dao" />
+	</mappers>
+</configuration>
